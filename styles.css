@@ -34,12 +34,24 @@ body{
   text-align: right;
   padding: 14px 18px;
   text-decoration: none;
+  margin: 20px;
 }
 
 .navbar a:hover {
   background-color: #333;
   color: white;
 } 
+
+@media screen and (max-width: 855px) {
+  .navbar {
+    float: none;
+    height: auto;
+    display: block;
+    text-align: left;
+  }
+  .navbar a{
+    margin:0px;
+  }}
 /* END NAVBAR */
 
 /* PRESENTATION IMAGE */
@@ -107,6 +119,12 @@ body{
   align-items: center;
   justify-content: center;
   margin:0 10%;
+}
+
+@media screen and (max-width: 900px) {
+  .ideas {
+    flex-direction: column;
+  }
 }
 
 .ideas-elements{
@@ -246,15 +264,19 @@ body{
 }
 
 .footer h1 {
+  width: 80%;
   font-family: 'Open Sans';
   font-weight: normal;
   color: white;
   margin-top: 110px;
   letter-spacing: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .footer h5 {
+  width: 80%;
+  text-align: center;
   font-family: 'Open Sans';
   font-weight: normal;
   color: white;
@@ -271,9 +293,16 @@ body{
 
 .form {
   color: #BBBFBF;
-  width: 900px;
+  width: 70%;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 910px) {
+  .form-container {
+    max-width: 80%;
+    padding: 10px;
+  }
 }
 
 .label{
@@ -324,6 +353,7 @@ input[type="submit"]:hover {
 }
 
 .social h1{
+  width: 100vw;
   font-family: 'Open Sans';
   font-weight: normal;
   letter-spacing: 5px;
@@ -334,6 +364,19 @@ input[type="submit"]:hover {
   display: flex;
   height: 100px;
   align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .social {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .social-networks,.social {
+    display: none;
+  }
 }
 
 .a-footer-image{
