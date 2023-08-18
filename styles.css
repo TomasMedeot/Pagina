@@ -1,12 +1,14 @@
 body{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     background-color:white;
+    margin: 0%;
 }
 
 /* NAVBAR */
@@ -42,7 +44,7 @@ body{
   color: white;
 } 
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 1000px) {
   .navbar {
     float: none;
     height: auto;
@@ -103,6 +105,16 @@ body{
   top: 28px;
   right: 25px;
 }
+
+@media screen and (max-width: 845px) {
+  .subtitle-image{
+    display: none;
+}}
+
+@media screen and (max-width: 575px) {
+  .subtitle{
+    height: auto;
+}}
 /* END SUBTITLE */
 
 /* CONTENT */
@@ -170,7 +182,6 @@ body{
   align-items: center;
   justify-content: center;
   max-height: 500px;
-  width:100vw;
   overflow: hidden; 
   text-align: center;
 }
@@ -194,7 +205,6 @@ body{
   font-weight: normal;
   position: absolute;
   top:30%;
-  width:100vw;
   align-items: center;
   color: white;
 }
@@ -215,6 +225,12 @@ body{
   background: linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%);
   
 }
+
+@media screen and (max-width: 990px) {
+  .image-container2::before,
+  .image-container2::after{
+    background: #ffffff00;
+  }}
 
 .image-container2::before {
   right: -38%;
@@ -373,8 +389,8 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width: 360px) {
-  .social-networks,.social {
+@media screen and (max-width: 425px) {
+  .social {
     display: none;
   }
 }
