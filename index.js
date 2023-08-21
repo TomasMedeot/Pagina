@@ -8,14 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "none";
         document.getElementById("events-div").style.display = "none";
         document.getElementById("confectionery-div").style.display = "none";
-
-        document.getElementById("all-img").style.display = "block";
-        document.getElementById("chocolate-img").style.display = "none";
-        document.getElementById("showpice-img").style.display = "none";
-        document.getElementById("desserts-img").style.display = "none";
-        document.getElementById("viennoiserie-img").style.display = "none";
-        document.getElementById("events-img").style.display = "none";
-        document.getElementById("confectionery-img").style.display = "none";
     });
 
     document.getElementById("chocolate").addEventListener("click", function() {
@@ -27,14 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "none";
         document.getElementById("events-div").style.display = "none";
         document.getElementById("confectionery-div").style.display = "none";
-
-        document.getElementById("all-img").style.display = "none";
-        document.getElementById("chocolate-img").style.display = "block";
-        document.getElementById("showpice-img").style.display = "none";
-        document.getElementById("desserts-img").style.display = "none";
-        document.getElementById("viennoiserie-img").style.display = "none";
-        document.getElementById("events-img").style.display = "none";
-        document.getElementById("confectionery-img").style.display = "none";
     });
 
     document.getElementById("showpice").addEventListener("click", function() {
@@ -46,14 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "none";
         document.getElementById("events-div").style.display = "none";
         document.getElementById("confectionery-div").style.display = "none";
-
-        document.getElementById("all-img").style.display = "none";
-        document.getElementById("chocolate-img").style.display = "none";
-        document.getElementById("showpice-img").style.display = "block";
-        document.getElementById("desserts-img").style.display = "none";
-        document.getElementById("viennoiserie-img").style.display = "none";
-        document.getElementById("events-img").style.display = "none";
-        document.getElementById("confectionery-img").style.display = "none";
     });
 
     document.getElementById("desserts").addEventListener("click", function() {
@@ -65,14 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "none";
         document.getElementById("events-div").style.display = "none";
         document.getElementById("confectionery-div").style.display = "none";
-
-        document.getElementById("all-img").style.display = "none";
-        document.getElementById("chocolate-img").style.display = "none";
-        document.getElementById("showpice-img").style.display = "none";
-        document.getElementById("desserts-img").style.display = "block";
-        document.getElementById("viennoiserie-img").style.display = "none";
-        document.getElementById("events-img").style.display = "none";
-        document.getElementById("confectionery-img").style.display = "none";
     });
 
     document.getElementById("viennoiserie").addEventListener("click", function() {
@@ -84,14 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "block";
         document.getElementById("events-div").style.display = "none";
         document.getElementById("confectionery-div").style.display = "none";
-
-        document.getElementById("all-img").style.display = "none";
-        document.getElementById("chocolate-img").style.display = "none";
-        document.getElementById("showpice-img").style.display = "none";
-        document.getElementById("desserts-img").style.display = "none";
-        document.getElementById("viennoiserie-img").style.display = "block";
-        document.getElementById("events-img").style.display = "none";
-        document.getElementById("confectionery-img").style.display = "none";
     });
 
     document.getElementById("events").addEventListener("click", function() {
@@ -103,14 +63,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "none";
         document.getElementById("events-div").style.display = "block";
         document.getElementById("confectionery-div").style.display = "none";
-
-        document.getElementById("all-img").style.display = "none";
-        document.getElementById("chocolate-img").style.display = "none";
-        document.getElementById("showpice-img").style.display = "none";
-        document.getElementById("desserts-img").style.display = "none";
-        document.getElementById("viennoiserie-img").style.display = "none";
-        document.getElementById("events-img").style.display = "block";
-        document.getElementById("confectionery-img").style.display = "none";
     });
 
     document.getElementById("confectionery").addEventListener("click", function() {
@@ -122,14 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("viennoiserie-div").style.display = "none";
         document.getElementById("events-div").style.display = "none";
         document.getElementById("confectionery-div").style.display = "block";
-
-        document.getElementById("all-img").style.display = "none";
-        document.getElementById("chocolate-img").style.display = "none";
-        document.getElementById("showpice-img").style.display = "none";
-        document.getElementById("desserts-img").style.display = "none";
-        document.getElementById("viennoiserie-img").style.display = "none";
-        document.getElementById("events-img").style.display = "none";
-        document.getElementById("confectionery-img").style.display = "block";
     });
 
 });

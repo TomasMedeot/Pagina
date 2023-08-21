@@ -431,21 +431,48 @@ body{
 /* END CONTENT3 */
 
 /* PORTFOLIO */
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 .port1{
+  flex: 1;
+  padding: 10px;
+  height: 50%;
   position: relative;
   font-family: "Open Sans";
-  font-weight: initial;
   background-color: #333;
-  color: white;
   text-align: center;
 }
 .port1 img{
   margin-top: 60px;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
+}
+.port1 h1{
+  color: #FFFFFF;
+  font-weight: initial;
+  letter-spacing: 5px;
+}
+.port1 h3,h5{
+  font-weight: initial;
+  color: #FFFFFF;
+  font-size: medium;
 }
 .port2{
+  flex: 1;
+  padding: 10px;
   background-color: white;
+}
+.overlay2{
+  height: 100px;
+  position: absolute;
+  top: 75%;
+  bottom: -50px;
+  background-color: #f8da8e79;
+  left: 0;
+  right: 0;
 }
 
 .port1::before,
@@ -454,20 +481,54 @@ body{
   content: "";
   position: absolute;
   height: 1px;  
-  background: linear-gradient(to right, transparent 0%, white 40%, white 60%, transparent 0%);
-  
+  background: linear-gradient(to right, #EBEBEB40, #EBEBEB40);
 }
 .port1::before {
-  width: 100%;
-  right: 30%;
+  width: 30%;
+  right: 15%;
   top: 35%;
 }
 
 .port1::after {
-  width: 100%;
-  left: 30%;
+  width: 30%;
+  left: 15%;
   top: 35%;
 }
+
+@media screen and (max-width: 800px) {
+  .port1::before,
+  .port1::after{
+    background: #ffffff00;
+  }
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px; 
+  overflow: hidden;
+}
+
+.portfolio-nav p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.portfolio-nav a {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  display: block;
+  color: #7C7C7C;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+}
+
+.portfolio-nav a:hover {
+  color: #ffffff;
+} 
 /* END PORTFOLIO */
 
 /* FOOTER */
