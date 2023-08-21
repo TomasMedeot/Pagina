@@ -77,3 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+function m_image_1() {
+    var overlay = document.getElementById("image-1");
+    overlay.style.display = "block";
+  }

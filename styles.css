@@ -462,17 +462,8 @@ body{
 }
 .port2{
   flex: 1;
-  padding: 10px;
+  padding: 100px;
   background-color: white;
-}
-.overlay2{
-  height: 100px;
-  position: absolute;
-  top: 75%;
-  bottom: -50px;
-  background-color: #f8da8e79;
-  left: 0;
-  right: 0;
 }
 
 .port1::before,
@@ -529,6 +520,130 @@ body{
 .portfolio-nav a:hover {
   color: #ffffff;
 } 
+@media screen and (max-width: 855px) {
+  .portfolio-nav {
+    float: none;
+    height: auto;
+    display: block;
+    text-align: left;
+  }
+  .portfolio-nav a{
+    margin:0px;
+  }}
+
+.contenedor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+}
+
+.div1 {
+  flex: 1;
+  background-color: #333;
+  height: 220px;
+}
+
+.div2 {
+  flex: 1;
+  background-color: white;
+  height: 220px;
+}
+
+.div3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 440px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.image-container3 {
+  display: flex;
+  width: 100%;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  overflow: hidden;
+}
+.image img{
+  object-fit: cover;
+  width: 302px;
+  height: 440px;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.overlay3 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 302px;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+.button {
+  transform: translate(33%, 500%);
+  display: inline-block;
+  margin: auto;
+  width: 176px;
+  height: 40px;
+  background-color: #FAD475;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #f8da8e;
+}
+.image:hover {
+  transform: scale(1.2);
+  filter: brightness(70%);
+  z-index: 1;
+}
+.image:hover .overlay3{
+  display: block;
+  z-index: 0;
+}
+
+.cont{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform: translate(0%, -530%);
+}
+
+.image-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1260px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  z-index: 0;
+}
+
+.image-overlay img {
+  height: 75%;
+  margin-top: 5%;
+}
 /* END PORTFOLIO */
 
 /* FOOTER */
