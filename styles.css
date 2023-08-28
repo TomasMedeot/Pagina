@@ -664,9 +664,8 @@ body{
   left: 0;
   width: 100vw;
   height: 140vh;
-  transform: translate(0px,218px);
+  transform: translateY(218px);
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
@@ -681,6 +680,8 @@ body{
   margin: 30px;
 }
 /* END PORTFOLIO */
+
+
 
 /* FOOTER */
 .footer{
