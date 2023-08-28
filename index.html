@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="recipe.css">
+  <link rel="stylesheet" href="schedule.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"">
   <script src="index.js"></script>
   <title>Page</title>
@@ -39,6 +41,7 @@
               <li><a href="#">CONTACT</a></li>
           </ul>
         </div>
+    </div>
         <!-- END NAVBAR -->
 
         <!-- ---------------------------------------------------------------------- -->
@@ -282,28 +285,24 @@
           <div class="div3" id="confectionery-div" style="display: none;">
             <h1>None Confectionery</h1>
           </div>
-          
-        </div>
-        <div class="port2">
-
         </div>
 
-        <div class="cont">
+        <div class="cont" id="cont1" style="display: none;">
           <div id="image-1" class="image-overlay" style="display: none;">
             <img src="./images/default-image.jpg" onclick="close_1()" alt="Imagen">
           </div>
         </div>
-        <div class="cont">
+        <div class="cont" id="cont2" style="display: none;">
           <div id="image-2" class="image-overlay" style="display: none;">
             <img src="./images/default-image.jpg" onclick="close_2()"alt="Imagen">
           </div>
         </div>
-        <div class="cont">
+        <div class="cont" id="cont3" style="display: none;">
           <div id="image-3" class="image-overlay" style="display: none;">
             <img src="./images/default-image.jpg" onclick="close_3()"alt="Imagen">
           </div>
         </div>
-        <div class="cont">
+        <div class="cont" id="cont4" style="display: none;">
           <div id="image-4" class="image-overlay" style="display: none;">
             <img src="./images/default-image.jpg" onclick="close_4()"alt="Imagen">
           </div>
@@ -313,6 +312,49 @@
         <!-- END PORTFOLIO -->
 
         <!-- ---------------------------------------------------------------------- -->
+
+        <!-- CONTEN 4 -->
+        <div class="content">
+          <div class="presentation">
+            <img src="./images/calendario.png">
+            <h1>SCHEDULE</h1>
+            <h5>New exciting challenges ahead, my calendar will be updated regularly with future work adventures. masterclasses and trainings.</h5>
+          </div>
+          <div class="ideas">
+            <div class="recipe">
+              <img class="recipe-img" src="./images/helado2.jpg" alr="Image">
+              <h3>ICE CREAM COURSE</h3>
+              <h5>05 Sep 2023</h5>
+              <h6>IAG course taught only for students adnd former students</h6>
+              <input class="button" type="button" value="View details">
+            </div>
+
+            <div class="recipe">
+              <img class="recipe-img" src="./images/tortachocolate.jpg" alr="Image">
+              <h3>GELATO</h3>
+              <h5>31 Oct 2023 - 01 Nov 2023</h5>
+              <h6>You will be able to learn all the fundamentals of the making of Gelato in Chocolate Academy.</h6>
+              <input class="button" type="button" value="View details">
+            </div>
+          </div>
+        </div>
+        <!-- END CONTEN 4 -->
+
+        <!-- ---------------------------------------------------------------------- -->
+
+        <!-- PRESENTATION IMAGE 2-->
+        <div class="image-container2">
+          <img class="textura" src="./images/textura2.jpg" alt="Image">
+          <img class="overlay" src="./images/manos.png" alt="Image">
+        <div class="overlay-text">
+          <h1>PARTNERS</h1>
+          <h6>CHIFFERS has partnered with some of the world’s leading companies & suppliers of catering equipment, tools and ingredients. Chiffers values the support and gives students and clients the opportunity to be working with the best equipment and with the highest quality ingredients available in the industry.</h6>  
+          <img src="./images/helado3.jpg">
+        </div>
+      </div>
+      <!-- END PRESENTATION IMAGE 2-->
+
+      <!-- ---------------------------------------------------------------------- -->
 
         <!-- FOOTER -->
         <div class="footer">

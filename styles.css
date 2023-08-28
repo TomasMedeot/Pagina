@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  display: block;
 }
 
 .text_yellow{
@@ -301,6 +302,11 @@ body{
   width: 50%;
   transform: translate(50%);
 }
+.overlay-text img{
+  height: 180px;
+  width: 180px;
+  border-radius: 180px;
+}
 
 .image-container2::before,
 .image-container2::after
@@ -492,11 +498,6 @@ body{
   color: #FFFFFF;
   font-size: medium;
 }
-.port2{
-  flex: 1;
-  padding: 108px;
-  background-color: white;
-}
 
 .port1::before,
 .port1::after
@@ -509,13 +510,13 @@ body{
 .port1::before {
   width: 30%;
   right: 15%;
-  top: 35%;
+  top: 28%;
 }
 
 .port1::after {
   width: 30%;
   left: 15%;
-  top: 35%;
+  top: 28%;
 }
 
 @media screen and (max-width: 800px) {
@@ -550,7 +551,7 @@ body{
 }
 
 .portfolio-nav a:hover {
-  color: #ffffff;
+  color: #ffea30;
 } 
 @media screen and (max-width: 855px) {
   .portfolio-nav {
@@ -565,9 +566,9 @@ body{
 
 .contenedor {
   position: relative;
-  display: flex;
+  display: block;
   flex-direction: column;
-  height: 440px;
+  max-height: 440px;
 }
 
 .div1 {
@@ -658,17 +659,17 @@ body{
 }
 
 .image-overlay {
-  display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 1200px;
+  height: 140vh;
+  transform: translate(0px,218px);
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 80px;
+  border-radius: 30px;
   z-index: 0;
 }
 
@@ -677,6 +678,7 @@ body{
   height: 600px;
   border-radius: 40px;
   margin-top: 5%;
+  margin: 30px;
 }
 /* END PORTFOLIO */
 
