@@ -4,6 +4,10 @@ body{
   overflow-x: hidden;
 }
 
+.text_yellow{
+  color: #ffea30 !important;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -22,13 +26,22 @@ body{
   overflow: hidden;
 }
 
+.navbar img{
+  position: absolute;
+  transform: translateX(-85vw);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px
+}
+
 .navbar p {
     display: table-cell;
     vertical-align: middle;
 }
 
 .navbar a {
-  font-family: 'Open Sans';
+  position: relative;
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   float: right;
   display: block;
@@ -36,7 +49,26 @@ body{
   text-align: right;
   padding: 14px 18px;
   text-decoration: none;
-  margin: 20px;
+}
+
+/*.navbar::after{
+  transform: translate(0px, 37px);
+  content: '';
+  position: absolute;
+  width: 23%;
+  height: 5px;
+  background-color: #ffea30;
+  left: 0;
+}*/
+
+.underlined::after {
+  transform: translate(0px, 46px);
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #ffea30;
+  left: 0;
 }
 
 .navbar a:hover {
@@ -51,7 +83,7 @@ body{
 }
 
 .menu-button {
-    font-family: 'Open Sans';
+    font-family: 'Nexa', sans-serif;
     padding: 10px 20px;
     background-color: #333;
     color: #A8A8A8AA;
@@ -135,7 +167,7 @@ body{
 }
 
 .subtitle h1{
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   letter-spacing: 8px;
   margin: 0 auto;
@@ -143,7 +175,7 @@ body{
 
 .subtitle h3{
   letter-spacing: 3px;  
-  font-family: 'Open Sans'; 
+  font-family: 'Nexa', sans-serif; 
   font-weight: normal;
 }
 
@@ -199,7 +231,7 @@ body{
 }
 
 .ideas-elements h5{
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   color: #3F3F3F;
   text-align: center;
   margin-top: 10%;
@@ -210,7 +242,7 @@ body{
 
 .ideas-elements h6{
   margin: 0;
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   color: #3F3F3F;
   text-align: center;
@@ -257,7 +289,7 @@ body{
 }
 
 .overlay-text{
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   position: absolute;
   top:30%;
@@ -323,7 +355,7 @@ body{
   width:25%;
   overflow: hidden;
   background-color: #333;
-  font-family: "Open Sans";
+  font-family: 'Nexa', sans-serif;
 }
 
 .content2-element h1{
@@ -348,7 +380,7 @@ body{
 }
 
 .content2-element-empty{
-  font-family: "Open Sans";
+  font-family: 'Nexa', sans-serif;
   font-stretch: extra-condensed;
   display: flex;
   margin: 0;
@@ -407,7 +439,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Open Sans";
+  font-family: 'Nexa', sans-serif;
   margin-left: 15%;
   margin-right: 15%;
   text-align: center;
@@ -441,7 +473,7 @@ body{
   padding: 10px;
   height: 50%;
   position: relative;
-  font-family: "Open Sans";
+  font-family: 'Nexa', sans-serif;
   background-color: #333;
   text-align: center;
 }
@@ -462,7 +494,7 @@ body{
 }
 .port2{
   flex: 1;
-  padding: 100px;
+  padding: 108px;
   background-color: white;
 }
 
@@ -508,7 +540,7 @@ body{
 }
 
 .portfolio-nav a {
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   display: block;
   color: #7C7C7C;
@@ -592,7 +624,7 @@ body{
   align-items: center;
   transition: opacity 1s ease;
 }
-.button {
+.button2 {
   transform: translate(33%, 500%);
   display: inline-block;
   margin: auto;
@@ -631,17 +663,19 @@ body{
   top: 0;
   left: 0;
   width: 100vw;
-  height: 1260px;
+  height: 1200px;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 80px;
   z-index: 0;
 }
 
 .image-overlay img {
-  height: 75%;
+  object-fit: cover;
+  height: 600px;
+  border-radius: 40px;
   margin-top: 5%;
 }
 /* END PORTFOLIO */
@@ -652,12 +686,16 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/logo2.png"); 
   background-color: #333;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .footer h1 {
   width: 80%;
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   color: white;
   margin-top: 110px;
@@ -669,7 +707,7 @@ body{
 .footer h5 {
   width: 80%;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   color: white;
   margin: 0;
@@ -746,7 +784,7 @@ input[type="submit"]:hover {
 
 .social h1{
   width: 100vw;
-  font-family: 'Open Sans';
+  font-family: 'Nexa', sans-serif;
   font-weight: normal;
   letter-spacing: 5px;
   margin-block-end: 0 ;

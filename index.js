@@ -77,7 +77,36 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+
 function m_image_1() {
     var overlay = document.getElementById("image-1");
     overlay.style.display = "block";
-  }
+}
+function m_image_2() {
+    var overlay = document.getElementById("image-2");
+    overlay.style.display = "block";
+}
+function m_image_3() {
+    var overlay = document.getElementById("image-3");
+    overlay.style.display = "block";
+}
+function m_image_4() {
+    var overlay = document.getElementById("image-4");
+    overlay.style.display = "block";
+}
+function close_1() {
+    var overlay = document.getElementById("image-1");
+    overlay.style.display = "none";
+}
+function close_2() {
+    var overlay = document.getElementById("image-2");
+    overlay.style.display = "none";
+}
+function close_3() {
+    var overlay = document.getElementById("image-3");
+    overlay.style.display = "none";
+}
+function close_4() {
+    var overlay = document.getElementById("image-4");
+    overlay.style.display = "none";
+}

@@ -42,7 +42,7 @@
 }
   
 .recipe-nav a {
-    font-family: 'Open Sans';
+    font-family: 'Nexa', sans-serif;
     font-weight: normal;
     display: block;
     color: #33333375;
@@ -81,17 +81,17 @@
 }
 
 .recipe h3{
-    font-family: 'Open Sans';
+    font-family: 'Nexa', sans-serif;
     margin: 10px;
 }
 
 .recipe h5{
-    font-family: 'Open Sans';
+    font-family: 'Nexa', sans-serif;
     margin: 0%;
 }
 
 .recipe h6{
-    font-family: 'Open Sans';
+    font-family: 'Nexa', sans-serif;
     text-align: center;
     margin: 10px;
     margin-left: 10px;
@@ -141,7 +141,7 @@
 }
 
 .showpice-int{
-    font-family: 'Open Sans';
+    font-family: 'Nexa', sans-serif;
     text-align: left;
     font-weight: normal;
     margin-left: 50px;
