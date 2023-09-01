@@ -793,6 +793,75 @@ body{
 .button3:hover{
   background-color: #f8da8e;
 }
+
+@media screen and (max-width: 1020px) {
+  .recipe2-d h1{
+    margin-left: 20%;
+  }
+  
+  .recipe2-d h3{
+    margin-left: 20%;
+  }
+  
+  .recipe2-d h5{
+    margin-left: 20%;
+  }
+  
+  .recipe2-d button{
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .recipe2{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .recipe2-d h1{
+    margin-left: 25%;
+  }
+  
+  .recipe2-d h3{
+    margin-left: 25%;
+  }
+  
+  .recipe2-d h5{
+    margin-left: 25%;
+  }
+  
+  .recipe2-d button{
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .recipe2-d h1{
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+  
+  .recipe2-d h3{
+    margin-left: 30%;
+    margin-right: 5%;
+  }
+  
+  .recipe2-d h5{
+    margin-left: 30%;
+    margin-right: 5%;
+  }
+  
+  .recipe2-d button{
+    margin-left: 25%;
+    margin-right: 5%;
+  }
+
+  .button3 {
+    display: flex;
+    width: 150px;
+  }
+}
 /* END CONTENT 5 */
 
 /* FOOTER */
