@@ -679,6 +679,76 @@ body{
   margin-top: 5%;
   margin: 30px;
 }
+
+.carrousel{
+  display: none;
+  width: 100vw;
+  transform: translateY(-440px);
+}
+
+.button4{
+  width: 37px;
+  background-color: #FAD475;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.button4:hover{
+  background-color: #f8da8e;
+}
+
+
+.carrusel-container {
+  width: 301px;
+  display: none;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item {
+  width: 100%;
+  flex: 0 0 301px;
+  object-fit: cover;
+  height: 440px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item img{
+  height: 440px;
+}
+
+.item img{
+  align-self: center;
+}
+
+@media screen and (max-width: 950px) {
+  .image-container3{
+    display: none
+  }
+
+  .carrousel{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carrusel{
+    width: 301px;
+    display: flex;
+  }
+
+  .carrusel-container{
+    display: block;
+  }
+}
 /* END PORTFOLIO */
 
 /* CONTENT 5 */

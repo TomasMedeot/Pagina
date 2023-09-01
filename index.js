@@ -1,3 +1,26 @@
+const carrusel = document.querySelector('.carrusel');
+
+let currentIndex = 0;
+
+function prev (){
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarrusel();
+    }
+};
+
+function next(){
+  if (currentIndex < 3) {
+    currentIndex++;
+    updateCarrusel();
+  }
+};
+
+function updateCarrusel() {
+  const offset = -currentIndex * 100;
+  document.getElementById("carrusel").style.transform = `translateX(${offset}%)`;
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("all").addEventListener("click", function() {
         event.preventDefault();

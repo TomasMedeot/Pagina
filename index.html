@@ -239,33 +239,56 @@
         <div class="contenedor">
           <div class="div1"></div>
           <div class="div2"></div>
-          <div class="div3" id="all-div">
-            <div class="image-container3">
-              <div class="image">
-                <img src="./images/default-image.jpg" alt="Imagen 1">
-                <div class="overlay3">
-                  <button class="button2" onclick="m_image_1()">ZOOM</button>
+          <div id="all-div">
+            <div class="div3">
+              <div class="image-container3">
+                <div class="image">
+                  <img src="./images/default-image.jpg" alt="Imagen 1">
+                  <div class="overlay3">
+                    <button class="button2" onclick="m_image_1()">ZOOM</button>
+                  </div>
                 </div>
-              </div>
-              <div class="image">
-                <img src="./images/mand-holding-cup.jpg" alt="Imagen 2">
-                <div class="overlay3">
-                  <button class="button2" onclick="m_image_2()">ZOOM</button>
+                <div class="image">
+                  <img src="./images/mand-holding-cup.jpg" alt="Imagen 2">
+                  <div class="overlay3">
+                    <button class="button2" onclick="m_image_2()">ZOOM</button>
+                  </div>
                 </div>
-              </div>
-              <div class="image">
-                <img src="./images/gelato.jpg" alt="Imagen 3">
-                <div class="overlay3">
-                  <button class="button2" onclick="m_image_3()">ZOOM</button>
+                <div class="image">
+                  <img src="./images/gelato.jpg" alt="Imagen 3">
+                  <div class="overlay3">
+                    <button class="button2" onclick="m_image_3()">ZOOM</button>
+                  </div>
                 </div>
-              </div>
-              <div class="image">
-                <img src="./images/425.jpg" alt="Imagen 4">
-                <div class="overlay3">
-                  <button class="button2" onclick="m_image_4()">ZOOM</button>
+                <div class="image">
+                  <img src="./images/425.jpg" alt="Imagen 4">
+                  <div class="overlay3">
+                    <button class="button2" onclick="m_image_4()">ZOOM</button>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="carrousel">
+              <button class="button4" onclick="prev()"><</button>
+              <div class="carrusel-container">
+                <div class="carrusel" id="carrusel">
+                  <div class="item">
+                    <img src="./images/default-image.jpg" alt="Imagen 1">
+                  </div>
+                  <div class="item">
+                    <img src="./images/mand-holding-cup.jpg" alt="Imagen 2">
+                  </div>
+                  <div class="item">
+                    <img src="./images/gelato.jpg" alt="Imagen 3">
+                  </div>
+                  <div class="item">
+                    <img src="./images/425.jpg" alt="Imagen 4">
+                  </div>
+                </div>
+              </div>          
+            <button class="button4" onclick="next()">></button>
+          </div>
+          </div>
           </div> 
           <div class="div3" id="chocolate-div" style="display: none;">
             <h1>None Chocolate</h1>
