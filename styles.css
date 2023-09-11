@@ -19,12 +19,15 @@ body{
 /* NAVBAR */
 .navbar {
   display: flex;
+  position: fixed;
   justify-content: flex-end;
   align-items: center;
   padding: 0 20px;
   height: 80px; 
+  width: 97vw;
   background-color: #333;
   overflow: hidden;
+  z-index: 100;
 }
 
 .navbar img{
@@ -143,7 +146,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 600px;
+  max-height: 460px;
   overflow: hidden; 
   text-align: center;
 }
@@ -265,7 +268,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 500px;
+  max-height: 290px;
   overflow: hidden; 
   text-align: center;
 }
@@ -283,10 +286,16 @@ body{
 .overlay{
   position: absolute;
   top: 20%;
-  left: 48.2%; 
+  left: 47.8%; 
   width: 80px;
   height: 80px;
   transform: translate(-20%, -50%); 
+}
+
+@media screen and (max-width: 700px){
+  .overlay{
+    left: 46%;
+  }
 }
 
 .overlay-text{
@@ -324,6 +333,9 @@ body{
   .image-container2::before,
   .image-container2::after{
     background: #ffffff00;
+  }
+  .image-container2{
+    max-height: 415px;
   }}
 
 @media screen and (max-width: 750px) {
@@ -357,7 +369,7 @@ body{
 
 .content2-element{
   margin: 0;
-  height: 268px;
+  height: 200px;
   width:25%;
   overflow: hidden;
   background-color: #333;
@@ -365,13 +377,13 @@ body{
 }
 
 .content2-element h1{
-  margin-top: 10%;
+  margin-top: 5%;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 5px;
   font-weight: 300;
-  margin-left: 8%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .content2-element h3{
@@ -390,7 +402,7 @@ body{
   font-stretch: extra-condensed;
   display: flex;
   margin: 0;
-  height: 268px;
+  height: 200px;
   width:25%;
   overflow: hidden;
   background-color:white;
@@ -439,8 +451,57 @@ body{
 /* END CONTENT2 */
 
 /* CONTENT3 */
+.ideas3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .ideas3 {
+    flex-direction: column;
+  }
+}
+
+.ideas-elements3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  height: 100px;
+  margin:55px 40px;
+  justify-content: center;
+}
+
+.ideas-elements3 h5{
+  font-family: 'Nexa', sans-serif;
+  color: #3F3F3F;
+  text-align: center;
+  margin-top: 3%;
+  margin-block-end: 10px;
+  font-weight: 900;
+  font-size: medium;
+}
+
+.ideas-elements3 h6{
+  margin: 0;
+  font-family: 'Nexa', sans-serif;
+  font-weight: normal;
+  color: #3F3F3F;
+  text-align: center;
+  font-size: small;
+  font-weight: 600;
+  font-weight: initial;
+}
+
+.ideas-elements3 img{
+  width: 48px;
+  height: 48px;
+}
+
 .presentation{
-  margin-top: 80px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,15 +512,18 @@ body{
   text-align: center;
 }
 .presentation h1{
-  margin-block-end: 25px;
+  margin-top: 10px;
+  margin-block-end: 10px;
   font-size: 50px;
   letter-spacing: 5px;
   font-weight: 300;
 }
 .presentation h3{
+  margin: 15px;
   color: #303030;
 }
 .presentation h5{
+  margin: 0;
   color: #595959;
 }
 .presentation img{
@@ -751,6 +815,54 @@ body{
 }
 /* END PORTFOLIO */
 
+/* PRESENTATION IMAGE 2 */
+.image-container4{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 640px;
+  overflow: hidden; 
+  text-align: center;
+}
+
+.image-container4 img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.image-container4::before,
+.image-container4::after
+{
+content: "";
+position: absolute;
+width: 230%;
+height: 1px;
+background-color: black;
+background: linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%);
+
+}
+
+@media screen and (max-width: 990px) {
+  .image-container4::before,
+  .image-container4::after{
+    background: #ffffff00;
+  }
+  .image-container4{
+    height: 700px;
+}}
+
+.image-container4::before {
+  right: -38%;
+  top: 20%;
+}
+
+.image-container4::after {
+  left: -38%;
+  top: 20%;
+}
+/* PRESENTATION IMAGE 2 END*/
+
 /* CONTENT 5 */
 .ideas2{
   display: flex;
@@ -952,7 +1064,7 @@ body{
   font-family: 'Nexa', sans-serif;
   font-weight: normal;
   color: white;
-  margin-top: 110px;
+  margin-top: 30px;
   letter-spacing: 10px;
   font-weight: 600;
   text-align: center;
@@ -965,7 +1077,7 @@ body{
   font-weight: normal;
   color: white;
   margin: 0;
-  margin-block-end: 50px;
+  margin-block-end: 20px;
 }
 
 .form-container {
@@ -1027,7 +1139,7 @@ input[type="submit"]:hover {
 }
 
 .social{
-  height: 280px;
+  height: 150px;
   display: flex;
   width: 720px;
   flex-direction: column;
