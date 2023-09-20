@@ -24,7 +24,7 @@ body{
   align-items: center;
   padding: 0 20px;
   height: 80px; 
-  width: 97vw;
+  width: 98vw;
   background-color: #333;
   overflow: hidden;
   z-index: 100;
@@ -132,6 +132,12 @@ body{
     display: block;
 }
 
+@media screen and (max-width: 2070px){
+  .navbar {
+    width: 97vw;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .navbar {
     display: none;
@@ -146,14 +152,21 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 460px;
+  max-height: 42vw;
   overflow: hidden; 
   text-align: center;
 }
 
 .image-container img {
+  object-fit:contain;
   max-height: 100%;
-  max-width: 100%;
+  width: 100vw;
+}
+
+@media screen and (max-width: 1000px){
+  .image-container {
+    max-height: 460px;
+  }
 }
 /* END PRESENTATION IMAGE */
 
@@ -269,6 +282,7 @@ body{
   align-items: center;
   justify-content: center;
   max-height: 290px;
+  width: 100vw;
   overflow: hidden; 
   text-align: center;
 }
@@ -279,17 +293,41 @@ body{
 }
 
 .textura{
-  max-height: 100%;
-  max-width: 100%;
+  width: 100vw;
 }
 
 .overlay{
   position: absolute;
   top: 20%;
-  left: 47.8%; 
+  left: 49%; 
   width: 80px;
   height: 80px;
   transform: translate(-20%, -50%); 
+}
+@media screen and (max-width: 1800px){
+  .overlay{
+    position: absolute;
+    top: 20%;
+    left: 47.8%; 
+    width: 80px;
+    height: 80px;
+    transform: translate(-20%, -50%); 
+  }
+}
+@media screen and (max-width: 2376px){
+  .image-container2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 290px;
+    overflow: hidden; 
+    text-align: center;
+  }
+  .image-container2 img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -372,8 +410,12 @@ body{
   height: 200px;
   width:25%;
   overflow: hidden;
-  background-color: #333;
+  background-color: #252525;
   font-family: 'Nexa', sans-serif;
+  background-image: url(./images/logo2.png);
+  background-position: center 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content2-element h1{
@@ -727,7 +769,7 @@ body{
   top: 0;
   left: 0;
   width: 100vw;
-  height: 140vh;
+  height:  93vh;
   transform: translateY(218px);
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;

@@ -104,48 +104,52 @@ document.addEventListener("DOMContentLoaded", function() {
 function m_image_1() {
     var overlay = document.getElementById("image-1");
     var cont = document.getElementById("cont1");
-    cont.style.display = "flex"
+    cont.style.zIndex = 10;
+    cont.style.display = "flex";
     overlay.style.display = "flex";
 }
 function m_image_2() {
     var overlay = document.getElementById("image-2");
     var cont = document.getElementById("cont2");
+    cont.style.zIndex = 10;
     cont.style.display = "flex"
     overlay.style.display = "flex";
 }
 function m_image_3() {
     var overlay = document.getElementById("image-3");
     var cont = document.getElementById("cont3");
-    cont.style.display = "flex"
+    cont.style.zIndex = 10;
+    cont.style.display = "flex";
     overlay.style.display = "flex";
 }
 function m_image_4() {
     var overlay = document.getElementById("image-4");
     var cont = document.getElementById("cont4");
-    cont.style.display = "flex"
+    cont.style.zIndex = 10;
+    cont.style.display = "flex";
     overlay.style.display = "flex";
 }
 function close_1() {
     var overlay = document.getElementById("image-1");
     var cont = document.getElementById("cont1");
-    cont.style.display = "none"
+    cont.style.display = "none";
     overlay.style.display = "none";
 }
 function close_2() {
     var overlay = document.getElementById("image-2");
     var cont = document.getElementById("cont2");
-    cont.style.display = "none"
+    cont.style.display = "none";
     overlay.style.display = "none";
 }
 function close_3() {
     var overlay = document.getElementById("image-3");
     var cont = document.getElementById("cont3");
-    cont.style.display = "none"
+    cont.style.display = "none";
     overlay.style.display = "none";
 }
 function close_4() {
     var overlay = document.getElementById("image-4");
     var cont = document.getElementById("cont4");
-    cont.style.display = "none"
+    cont.style.display = "none";
     overlay.style.display = "none";
 }
