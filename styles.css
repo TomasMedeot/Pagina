@@ -55,16 +55,6 @@ body{
   text-decoration: none;
 }
 
-/*.navbar::after{
-  transform: translate(0px, 37px);
-  content: '';
-  position: absolute;
-  width: 23%;
-  height: 5px;
-  background-color: #ffea30;
-  left: 0;
-}*/
-
 .underlined::after {
   transform: translate(0px, 46px);
   content: '';
